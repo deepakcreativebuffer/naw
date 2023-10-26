@@ -1,0 +1,86 @@
+/* ------------------------------ *\
+    $BASE FORMS
+/* ------------------------------ */
+
+.sty-uty-form{
+    position: relative;
+    .sty-uty-input{
+        position: relative;
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
+        .sty-uty-tag{
+            color: $color-gray-9;
+            position: absolute;
+            top: 1.5vw;
+            left: 2vw;
+            font-size: $font-size-16;
+            z-index: $z-nivel-0;
+            transition: top 0.2s, font-size 0.2s;
+        }
+        .sty-uty-field{
+            position: relative;
+            border: unset;
+            border-bottom: $color-brand-3 1px solid;
+            width: 100%;
+            font-size: $font-size-18;
+            padding: 1vw 2vw;
+            background-color: rgba(0, 0, 0, 0);
+            z-index: $z-nivel-1;
+            transition: border-bottom 0.5s;
+        }
+        .sty-uty-field:focus{
+            outline: none;
+        }
+        .sty-uty-field:focus+.sty-uty-tag,
+        .sty-uty-field.sty-uty-use+.sty-uty-tag{
+            top: -1.8vw;
+            color: $color-brand-3;
+            font-size: $font-size-16;
+        }
+        .sty-uty-validation{
+            position: absolute;
+            left: 1.3vw;
+            bottom: -2.2vw;
+            color: $color-brand-1;
+            font-size: $font-size-14;
+        }
+    }
+}
+
+.sty-content-input{
+    position: relative;
+    .sty-input{
+        font-size: $font-size-18;
+        border: solid 1px $color-gray-2;
+        border-radius: 0.3em;
+        width: 100%;
+        color: $color-black-1;
+        padding: 0.4em 2.2em;
+    }
+    .sty-input::placeholder{
+        color: $color-gray-2;
+    }
+    .sty-icon{
+        top: 0.4em;
+        left: 0.5em;
+        position: absolute;
+        width: 1em;
+        height: auto;
+    }
+    a{
+        color: $color-brand-4;
+    }
+}
+
+.sty-content-text{
+    .sty-text{
+        font-size: $font-size-18;
+        border: solid 1px $color-gray-2;
+        border-radius: 0.3em;
+        width: 100%;
+        padding: 0.4em;
+    }
+    .sty-text::placeholder{
+        color: $color-gray-2;
+    }
+}

@@ -1,0 +1,17 @@
+/* ------------------------------ *\
+    $LAYOUT ABOUT US
+/* ------------------------------ */
+
+.sty_about_us{
+    .sty-content-1{
+        line-height: $font-size-40;
+    }
+}
+
+@media (max-width: 767px){
+    .sty_about_us{
+        .sty-content-1{
+            line-height: $font-size-small-40;
+        }
+    }   
+}

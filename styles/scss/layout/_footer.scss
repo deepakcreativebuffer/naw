@@ -1,0 +1,289 @@
+/* ------------------------------ *\
+    $LAYOUT FOOTER
+/* ------------------------------ */
+
+.sty-footer {
+    background-color: $color-brand-2;
+    font-size: $font-size-12;
+    padding-top: 2em;
+
+    .sty-content {
+        margin-top: 3em;
+    }
+
+    .sty-cont-logo {
+        width: 12em;
+        height: auto;
+        margin: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .sty-copyright {
+        color: $color-white-1;
+        font-size: $font-size-11;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .sty-data-footer {
+        color: $color-white-1;
+        font-size: $font-size-12;
+        margin-bottom: 0.6em;
+    }
+
+    .sty-link-footer {
+        color: $color-white-1;
+        font-size: $font-size-12;
+        margin-bottom: 0.6em;
+    }
+
+    .payment-methods {
+        display: flex;
+    }
+
+    .payment-methods-icons {
+        margin-left: 10px;
+    }
+
+
+
+    .sty-cont-whattsapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 3vw;
+        left: 3vw;
+        background-color: #25d366;
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        font-size: 1.5vw;
+        z-index: $z-nivel-2;
+
+        svg {
+            height: 3em;
+            width: 3em;
+            color: #fff;
+        }
+    }
+
+    .borderboxMoney {
+        border: solid 1px #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+
+    }
+}
+
+.TA_socialButtonReviews {
+
+    .socialWidgetContainer {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .socialWidget {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 120%;
+        text-decoration: none;
+        font-size: 8pt;
+
+        .socialWidgetCallout,
+        .socialWidgetCore,
+        .socialWidgetCore .rateText,
+        .socialWidgetCore {
+            display: inline-block;
+            position: relative;
+            float: left;
+        }
+    }
+
+    .socialWidgetCore {
+        background-color: #34e0a1;
+    }
+
+    .socialWidget.cx_brand_refresh1 .socialWidgetCore.rect {
+        width: 28px;
+        height: 20px;
+        border-radius: 0;
+    }
+
+
+
+    .grayArrowLeft {
+        background-image: none;
+    }
+
+    .socialWidget.cx_brand_refresh1 .socialWidgetCallout .borderBox {
+        border-color: #000;
+        font-family: Trip Sans VF, Trip Sans, Arial, sans-serif;
+    }
+
+    .reviewCount {
+        display: inline-block;
+        position: relative;
+        padding: 3px 4px 3px 4px;
+        height: 100%;
+        overflow: visible;
+        display: inline;
+        float: inherit;
+        vertical-align: middle;
+        color: #000;
+        font-weight: 400;
+        line-height: 120%;
+        font-size: 8pt;
+    }
+
+    .socialWidgetCallout .grayArrowLeft,
+    .socialWidgetCallout .grayArrowRight {
+        width: 4px;
+        height: 7px;
+        position: relative;
+        z-index: 1;
+        left: 1px;
+        overflow: hidden;
+        float: left;
+        top: 6px;
+    }
+
+    .borderBox {
+        box-sizing: border-box;
+        height: 20px;
+        border: 1px solid #b7b7b7;
+        border-radius: 2px;
+        float: inherit;
+        overflow: hidden;
+        background-color: #fff;
+
+    }
+
+    //display: flex;
+
+    img {
+        width: 20px;
+        padding: 4px;
+        float: left;
+    }
+}
+
+.icon-moneyF {
+    display: flex;
+    height: 18px;
+
+    img {
+        width: 17px;
+    }
+}
+
+.moneySwitch-resp,
+.TA_certificateOfExcellence-resp {
+    display: none;
+}
+
+.TA_certificateOfExcellence {
+    position: absolute;
+    top: 0;
+    @media (min-width: 1024px) {
+        img{
+            width: 100px;
+        }
+    }
+ 
+    @media (max-width: 1024px) {
+        left: -60px
+    }
+}
+
+@media (max-width: 767px) {
+    .sty-footer {
+        font-size: $font-size-small-12;
+
+        .sty-cont-logo {
+            width: 10em;
+        }
+
+        .sty-content {
+            margin-top: 1em;
+        }
+
+        .sty-data-footer {
+            font-size: $font-size-small-13;
+        }
+
+        .sty-link-footer {
+            font-size: $font-size-small-12;
+        }
+
+        .sty-copyright {
+            font-size: $font-size-small-11;
+            margin-top: 0em;
+            margin-bottom: 3em;
+        }
+
+        .sty-cont-whattsapp {
+            font-size: 5vw;
+        }
+    }
+
+    .moneySwitch,
+    .TA_certificateOfExcellence {
+        display: none;
+    }
+
+    .moneySwitch-resp {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .payment-methods {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .TA_certificateOfExcellence-resp {
+        position: absolute;
+        left: 5px;
+        bottom: 120px;
+        display: block;
+    }
+
+    .TA_socialButtonReviews {
+
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+    }
+
+    .borderboxMoney {
+        padding: 0;
+        margin-bottom: 0px;
+        margin: auto;
+        width: 40%;
+
+        img {
+            margin-top: 1px;
+            width: 90%;
+            height: 20%;
+        }
+
+        .icon-moneyF {
+            display: flex;
+            height: 13px;
+
+            img {
+                width: 13px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,64 @@
+/* ------------------------------ *\
+    $BASE BUTTONS
+/* ------------------------------ */
+
+// Font
+@font-face {
+    font-family: 'Alata';
+    font-display: block;
+    font-weight: 400;
+    src: local('Alata'), url('/static/fonts/alata/Alata-Regular.ttf') format('truetype');
+}
+
+
+// Font
+@font-face {
+    font-family: 'RockSalt';
+    font-display: block;
+    font-weight: 400;
+    src: local('RockSalt'), url('/static/fonts/rocksalt/RockSalt.ttf') format('truetype');
+}
+
+// Font
+@font-face {
+    font-family: 'Roboto';
+    font-display: block;
+    font-weight: 400;
+    src: local('RockSalt'), url('/static/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+// Font
+@font-face {
+    font-family: 'RobotoLight';
+    font-display: block;
+    font-weight: 400;
+    src: local('RobotoLight'), url('/static/fonts/roboto/Roboto-Light.ttf') format('truetype');
+}
+// Font
+@font-face {
+    font-family: 'RobotoBold';
+    font-display: block;
+    font-weight: 400;
+    src: local('RobotoBold'), url('/static/fonts/roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+// Font
+@font-face {
+    font-family: 'Montserrat';
+    font-display: block;
+    font-weight: 400;
+    src: local('RockSalt'), url('/static/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+// Font
+@font-face {
+    font-family: 'MontserratLight';
+    font-display: block;
+    font-weight: 400;
+    src: local('RobotoLight'), url('/static/fonts/montserrat/Montserrat-Light.ttf') format('truetype');
+}
+// Font
+@font-face {
+    font-family: 'MontserratBold';
+    font-display: block;
+    font-weight: 400;
+    src: local('RobotoBold'), url('/static/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+}

@@ -1,0 +1,94 @@
+
+.sty-reserve{
+    .sty-content-all{
+        margin-top: 5em;
+        margin-bottom: 8em;
+    }
+
+    .sty-content-detail{
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+    }
+
+    hr{
+        color: $color-gray-3;
+    }
+
+    .nav-item{
+        .active{
+            color: $color-black-1;
+        }
+    }
+
+    .sty-cont-image-detail{
+        margin-top: 1em;
+        width: 100%;
+        height: 20vw;
+        border-radius: 0.2em;
+        overflow: hidden;
+    }
+
+    .sty-title-section{
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .sty-container-button{
+        margin-top: 1em;
+    }
+
+    .sty-content-input{
+        margin-bottom: 1.5em;
+    }
+
+    .sty-title-form{
+        margin-bottom: 1em;
+    }
+
+    .sty-cont-policy{
+        margin-top: 1.5em;
+        .sty-title-policy{
+            margin-bottom: 0.8em;
+        }
+    }
+
+    .sty-coupon-true{
+        color: green;
+    }
+    .sty-coupon-false{
+        color: red;
+    }
+
+    .sty-content-receipt{
+        margin-top: 3em;
+        margin-bottom: 3em;
+        padding: 2em;
+        border-radius: 0.7em;
+        background-color: $color-white-2;
+
+        .sty-tag-1{
+            margin-bottom: 0.4em;
+        }
+    }
+
+    .sty-uty-total-total{
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 767px){
+    .sty-reserve{
+        .sty-resp-cont-1{
+            margin-top: 2em;
+            margin-bottom: 3em;
+        }
+
+        .sty-cont-image-detail{
+            height: 70vw;
+        }
+
+        .sty-cont-button-coupon{
+            margin-top: 1em;
+        }
+    }
+}

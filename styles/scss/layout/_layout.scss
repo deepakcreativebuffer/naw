@@ -1,0 +1,111 @@
+/* ------------------------------ *\
+    $LAYOUT LAYOUT
+/* ------------------------------ */
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Alata";
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.sty-load-element.show {
+  visibility: visible;
+}
+
+.sty-load-element {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-courtain-2;
+  z-index: $z-nivel-1000;
+
+  .sty-load-img {
+    width: 12vw;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+hr {
+  margin-top: unset;
+  margin-bottom: unset;
+  border: 0;
+  border-top: 1px solid $color-gray-5;
+}
+
+a {
+  color: $color-white-1;
+}
+
+a:hover {
+  text-decoration: unset;
+}
+
+// Menu dropdown
+.sty-drop-item {
+  width: 100%;
+  color: $color-black-2 !important;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.sty-drop-item:hover {
+  background-color: $color-gray-5;
+  text-decoration: unset !important;
+  color: $color-black-1 !important;
+}
+
+.toast-message-1 {
+  background-color: $color-brand-1 !important;
+  color: $color-brand-4 !important;
+  padding: 2em 1em;
+  border-radius: 0.5em !important;
+}
+
+.sty-color-email {
+  color: #747474 !important;
+}
+
+.sty-color-whatsapp {
+  color: #01e675 !important;
+}
+
+.sty-color-facebook {
+  color: #4267b2 !important;
+}
+
+.sty-color-instagram {
+  color: #4721bf !important;
+}
+
+.sty-color-tripadvisor {
+  color: #34e0a1 !important;
+}
+
+//////////
+// Error
+.sty-error-cont-1 {
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+}

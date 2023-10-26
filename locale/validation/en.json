@@ -1,0 +1,9 @@
+{
+    "validation_1": "Required Value",
+    "validation_2": "Invalid Format",
+    "validation_3": "Delete blank spaces",
+    "validation_4": "Select box",
+    "mesage_1": "Message sent succesfully",
+    "mesage_2": "We are processing your payment",
+    "mesage_3": "Successful subscription"
+}

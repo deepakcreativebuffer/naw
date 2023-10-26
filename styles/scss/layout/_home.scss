@@ -1,0 +1,325 @@
+/* ------------------------------ *\
+    $LAYOUT HOME
+/* ------------------------------ */
+
+.sty-home{
+    .sty-section-1-1{}
+    .sty-section-1-2{
+        margin-top: 0.7em;
+        margin-bottom: 1.5em;
+    }
+    .sty-section-2-1{
+        margin-bottom: 1.5em;
+    }
+    .sty-section-2-2{}
+    .sty-section-2-3{
+        margin-top: 3em;
+
+        .sty-tag{
+            margin-top: 1.5em;
+        }
+    }
+
+    .sty-content-search{
+        font-size: $font-size-16;
+        background-color: $color-brand-3;
+        padding: 1.6em 1em;
+    }
+    .sty-col-input{
+        padding-right: 0.4rem;
+        padding-left: 0.4rem;
+    }
+    .sty-col-1{
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+    }
+
+    .sty-container-adventure{
+        position: relative;
+        width: 100%;
+        height: 20vw;
+    }
+    .sty-content-adventure{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+        margin-bottom: -1px;
+        overflow: hidden;
+        transition: all 0.2s ease;
+        .sty-tag{
+            position: absolute;
+            z-index: $z-nivel-1;
+            top: 0.9em;
+            left: 1.5em;
+        }
+        .sty-activities{
+            visibility: hidden;
+            position: absolute;
+            top: 5em;
+            left: 2em;
+
+            .sty-activity{
+                margin-bottom: 0.5em;
+            }
+            .sty-cont-button{
+                margin-top: 1.5em;
+            }
+        }
+        
+        a:hover {
+            color: $color-gray-3;
+        }
+    }
+    .sty-container-adventure:hover{
+        .sty-content-adventure{
+            z-index: $z-nivel-2;
+            top: -2em;
+            bottom: -2em;
+            left: -2em;
+            right: -2em;
+        }
+        .sty-activities{
+            visibility: visible;
+        }
+    }
+    .sty-content-adventure .sty-uty-back-section img{
+        transition: height 0.2s ease-in;
+    }
+    .sty-content-adventure:hover .sty-uty-back-section img{
+        height: 102%;
+    }
+
+    .sty-content-destination{
+        position: relative;
+        cursor: pointer;
+        height: 15vw;
+        margin-bottom: 0.65em;
+        overflow: hidden;
+        .sty-tag{
+            position: absolute;
+            z-index: $z-nivel-1;
+        }
+        .fade{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+            opacity: 0.25;
+        }
+    }
+    .sty-content-destination .sty-uty-back-section img{
+        transition: height 0.2s ease-in;
+    }
+    .sty-content-destination:hover .sty-uty-back-section img{
+        height: 102%;
+    }
+
+    .sty-conteiner-pc{
+        display: flex;
+    }
+    .sty-conteiner-resp{
+        display: none;
+    }
+    .sty-resp-container-category{
+        position: relative;
+        cursor: pointer;
+        border-radius: 1em;
+        overflow: hidden;
+        font-size: $font-size-small-15;
+        height: 50vw;
+        margin-bottom: 2em;
+
+        .sty-resp-tag{
+            position: absolute;
+            
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: $color-brand-4;
+            color: $color-black-1;
+            font-size: $font-size-small-18;
+            padding: 1em;
+        }
+    }
+
+    .sty-content-slider{
+        position: relative;
+
+        .sty-content-arrows{
+            position: absolute;
+            top: -6vw;
+            right: 0px;
+
+            .sty-cursor{
+                display: inline;
+            }
+
+            .sty-cursor{
+                cursor: pointer;
+                margin-right: 1.5em;
+            }
+        }
+
+        .sty-content-arrows-res{
+            position: absolute;
+            top: calc(50% - 10vw);
+
+            .sty-cursor{
+                color: $color-gray-3;
+                height: 10vw;
+                width: auto;
+                font-size: 10vw;
+            }
+        }
+        .sty-content-arrows-res.sty-left{
+            left: -1.5em;
+        }
+        .sty-content-arrows-res.sty-right{
+            right: -1.5em;
+        }
+    }
+    .sty-margin-auto{
+        margin: auto;
+    }
+
+    .scrolling-wrapper-flexbox {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        .sty-card-swi{
+            flex: 0 0 auto;
+            margin-right: 0.5em;
+        }        
+    }
+    .scrolling-wrapper-flexbox-2 {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        .sty-card-swi-2{
+            flex: 0 0 auto;
+        }
+    }
+    .sty-card-swi{
+        width: 35vw;
+        height: 50vw;
+        overflow: hidden;
+    }
+    .sty-card-swi.first{
+        margin-left: 1em;
+    }
+    .sty-card-swi.last{
+        margin-right: 1em;
+    }
+    .sty-card-swi-2{
+        width: 70vw;
+        // height: 75vw;
+        overflow: hidden;
+    }
+    .scrolling-wrapper-flexbox {
+        // height: 50vw;
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .scrolling-wrapper-flexbox-2 {
+        // height: 75vw;
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .sty-margin-button-1{
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 767px){
+    .sty-home{
+        .sty-section-1-2{
+            display: none;
+        }
+
+        .sty-title-resp{
+            font-size: $font-size-small-46;
+        }
+
+        .sty-container-title{
+            margin-bottom: 2em;
+        }
+
+        .sty-content-search{
+            background-color: unset;
+        }
+
+        .sty-col-input{
+            margin-bottom: 2.5em;
+
+            .sty-select-1{
+                background-color: #243736;
+            }
+            .sty-tag{
+                color: $color-white-1;
+            }
+        }
+
+        .sty-uty-drop-menu-content-1{
+            min-width: 10rem !important;
+        }
+
+        .sty-conteiner-pc{
+            display: none;
+        }
+        .sty-conteiner-resp{
+            display: block;
+        }
+
+        .sty-content-destination{
+            height: 40vw;
+        }
+
+        // .sty-logo-resp{
+        //     width: 35vw;
+        //     height: auto;
+        //     margin: auto;
+        //     img{
+        //         width: 100%;
+        //         height: 100%;
+        //     }
+        // }
+
+        .sty-select-1:active, 
+        .sty-select-1:hover{
+            background-color: $color-brand-3 !important;    
+        }
+
+        .scrolling-wrapper-flexbox {
+            display: flex;
+        }
+        .scrolling-wrapper-flexbox-2 {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .sty-logo-resp{
+        z-index: $z-nivel-1;
+        width: 30vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.2em;
+        // margin-bottom: -30vw;
+        Image{
+            width: 100%;
+            height: 75%;
+        }
+    }
+}

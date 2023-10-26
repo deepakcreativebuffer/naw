@@ -1,0 +1,57 @@
+{
+    "duration": "Duración",
+    "hours": "horas",
+    "location": "Ubicación",
+    "bookOnly": "Reserva con solo un",
+    "inAdvance": "de anticipación y paga el resto el día de tu actividad.",
+    "date": "Fecha",
+    "time": "Hora",
+    "tax": "Impuesto",
+    "payNow": "Pague ahora",
+    "payTour": "Pague en el tour",
+    "total": "Total",
+    "cancellationPolicies": "Políticas de cancelación",
+    "1requirement": "Revisa los requisitos",
+    "2travels": "¿Quién viaja?",
+    "3pay": "Revisa y paga",
+
+    "check": "Revisa los requisitos del tour",
+    "noCheck": "Esta experiencia no cuenta con algún requerimiento especial",
+
+    "adventurer": "Aventurero",
+    "adventurer_1": "aventureros",
+    "adventureInfo": "Información de contacto",
+    "name": "Nombre",
+    "lastName": "Apellido",
+
+    "paymentMethod": "Método de Pago",
+    "coupon": "Cupón",
+    "card": "Tarjeta de crédito o débito",
+    "fullName": "Nombre Completo",
+    "tag1": "Opciones de pago",
+    "tag2": "Suscribete al Newsletter",
+    "tag3": "Acuerdo de Servicios",
+    "option_1_1": "Reservación (|%) - el @% restante debe pagarse el día del tour.",
+    "option_2_1": "Quiero recibir noticias de Naw.",
+    "option_3_1": "Estoy de acuerdo con los términos y condiciones de Naw.",
+    "option_4_1": "Acepto el ",
+    "option_4_1_a": "Acuerdo de privacidad",
+
+    "payment": "Confirmar Pago",
+    "discount": "Descuento",
+    "validCoupon": "Cupón valido",
+    "notValidCoupon": "Cupón no valido",
+    "undefined": "Sin definir",
+
+    "policy_1": "En caso de que las condiciones climatológicas no permitan realizar tu actividad, se reprogramará para otro día o se hará el reembolso del 100%.",
+    "policy_2": "Tu reserva cuenta con cancelación gratuita hasta 48 hrs antes de tu actividad.",
+    "policy_3": "Si cancelas entre 48 hrs y 24 hrs antes, se te cobrará 50% de tu reservación.",
+    "policy_4": "Si no cancelas antes de 24 hrs o no te presentas el día de la actividad, se te cobrará el 100% de la reserva.",
+
+    "pickup_tag_1": "Pick up incluido: Información para el pick up",
+    "pickup_tag_2": "Nombre del hotel con # de habitación (en caso de contar con ella) o dirección de AirBnb",
+    "pickup_tag_3": "Enviaré la información de pick up después",
+
+    "suit_size_tag_1":"Talla de equipo",
+    "suit_size_tag_2":"Escribe tu número de zapatos (MX, US o EU), tu altura y tu peso. Así aseguramos que tu equipo de buceo te ajuste perfecto"
+}

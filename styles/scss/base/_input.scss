@@ -1,0 +1,195 @@
+/* ------------------------------ *\
+    $BASE INPUT
+/* ------------------------------ */
+
+.sty-content-input-1{
+    position: relative;
+    img{
+        position: absolute;
+        top: 0.5em;
+        left: 1em;
+        width: $font-size-22;
+    }
+}
+.sty-input-1{
+    width: 100%;
+    border: unset;
+    background-color: $color-white-1;
+    border-radius: 0.2em;
+    font-size: $font-size-16;
+    padding: 0.5em 1em 0.5em 3.2em;
+    color: $color-gray-1;
+}
+
+.sty-select-1{
+    position: relative;
+    width: 100%;
+    border: unset;
+    background-color: $color-white-1;
+    border-radius: 0.2em;
+    padding: 0.45em 0.5em;
+    text-align: left;
+
+    .sty-content-select{
+        .sty-icon{
+            display: inline-flex;
+            height: 1.4em;
+            margin-right: 1em;
+        }
+        .sty-tag{
+            display: inline;
+            color: $color-gray-1;
+        }
+    }
+}
+
+.sty-select-1:active,
+.sty-select-1:hover{
+    background-color: $color-white-2 !important;
+    border-color: $color-white-2 !important;
+}
+
+.sty-select-1:focus {
+    border: unset;
+    box-shadow: unset;
+}
+
+
+///////////////////
+.sty-cont-row{
+    margin-bottom: 1.2em;
+}
+.sty-container-input-1{
+    position: relative;
+    .sty-icon{
+        font-size: $font-size-18;
+        position: absolute;
+        z-index: $z-nivel-0;
+        top: 0.2em;
+        right: 0.3em;
+        img{
+            width: 1.2em;
+            height: 1.2em;
+        }
+    }
+    .sty-icon-2{
+        font-size: $font-size-18;
+        position: absolute;
+        z-index: $z-nivel-0;
+        top: 0.16em;
+        right: 1em;
+        img{
+            width: 1.2em;
+            height: 1.2em;
+        }
+    }
+
+    .input_validation{
+        position: relative;
+        .message_validation{
+            font-size: $font-size-12;
+            color: $color-second-2;
+            position: absolute;
+            bottom: -1.6em;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    .hidden_element{
+        display: none;
+    }
+}
+.sty-uty-input-2{
+    font-size: $font-size-15;
+    border: 1px solid #9fa3a7;
+    border-radius: 0.4em;
+    height: 2.2em;
+    padding-left: 0.5em;
+    background-color: rgba(0, 0, 0 , 0);
+    z-index: $z-nivel-0;
+}
+.sty-uty-area-2{
+    font-size: $font-size-15;
+    border: 1px solid #9fa3a7;
+    border-radius: 0.4em;
+    background-color: $color-white-1;
+}
+.sty-uty-input-2.w-100{
+    width: 100%;
+}
+
+.sty-content-input-3{
+    .sty-tag-input{
+        margin-bottom: 0.5em;
+    }
+    .input_validation{
+        position: relative;
+        .message_validation{
+            font-size: $font-size-12;
+            color: $color-second-2;
+            position: absolute;
+            bottom: -1.6em;
+            left: 0;
+            width: 100%;
+        }
+    }
+    .hidden_element{
+        display: none;
+    }
+}
+.sty-uty-input-3{
+    font-size: $font-size-15;
+    border: 1px solid #9fa3a7;
+    border-radius: 0.4em;
+    height: 2.2em;
+    padding-left: 0.5em;
+  
+}
+.sty-uty-input-3-error{
+    font-size: $font-size-15;
+    border: 1px solid #9fa3a7;
+    border-radius: 0.4em;
+    height: 2.2em;
+    padding-left: 0.5em;
+    width: 100%;
+}
+.sty-textarea-1{
+    height: unset !important;
+}
+.sty-uty-input-3.padding-1{
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+.sty-uty-input-3::placeholder {
+    color: $color-gray-2;
+}
+.sty-uty-input-3-error::placeholder {
+    color:white;
+}
+.sty-uty-input-3.w-100{
+    width: 100%;
+}
+
+
+@media (max-width: 767px){
+    .sty-container-input-1{
+        .sty-icon{
+            font-size: $font-size-small-18;
+        }
+        .sty-icon-2{
+            font-size: $font-size-small-18;
+        }
+    }
+    .sty-uty-input-2{
+        font-size: $font-size-small-15;
+    }
+    .sty-uty-area-2{
+        font-size: $font-size-small-15;
+    }
+
+    .sty-uty-input-3{
+        font-size: $font-size-small-15;
+    }
+
+}

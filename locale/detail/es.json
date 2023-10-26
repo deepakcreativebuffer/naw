@@ -1,0 +1,21 @@
+{
+    "outstanding": "Destacado",
+    "description": "Descripción",
+    "includes": "Incluye",
+    "notIncludes": "No incluye",
+    "where": "¿Dónde nos vemos?",
+    "requirements": "Requisitos",
+    "recommendations": "Recomendaciones",
+    "reviews": "Reseñas",  
+    "size": "Tamaño",
+    "perPerson": "por persona",
+    "noDate": "Sin fechas disponibles",
+
+    "date": "Fecha",
+    "hour": "Hora",
+    "adventurous": "Aventureros",
+
+    "tag_1": "Duración",
+    "tag_2": "Ubicación",
+    "tag_3": "Máximo @ personas"
+}

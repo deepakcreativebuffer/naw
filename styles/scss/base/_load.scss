@@ -1,0 +1,24 @@
+.sty-load-element.show{
+    visibility: visible;
+}
+.sty-load-element{
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: $color-courtain-8;
+    z-index: $z-nivel-100;
+    .sty-load-img{
+        width: 12vw;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

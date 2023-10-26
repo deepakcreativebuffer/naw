@@ -1,0 +1,54 @@
+/* ------------------------------ *\
+    $LAYOUT ABOUT US
+/* ------------------------------ */
+
+.sty_contact{
+
+    .sty-section-contact{
+        margin-bottom: 1.2em;
+
+        .sty-title{
+            margin-bottom: 0.7em;
+        }
+        .sty-link{
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
+            
+            a{
+                display: inline-block;
+            }
+        }
+
+        a{
+            color: $color-black-1;
+        }
+        a:hover{
+            color: $color-gray-2;
+        }
+
+        .sty-social-tag{
+            display: inline-block;
+            margin-left: 0.6em;
+        }
+    }
+
+    .sty-input-form{
+        margin-bottom: 1.8em;
+    }
+
+    //////////
+    .sty-join-content{
+        border: solid 1px $color-gray-12;
+        border-radius: 0.5em;
+        padding: 2em;
+    }
+}
+
+@media (max-width: 767px){
+    .sty_contact{
+        .sty-resp-cont-1{
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+    }
+}

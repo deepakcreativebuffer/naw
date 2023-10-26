@@ -1,0 +1,57 @@
+{
+    "duration": "Duration",
+    "hours": "hours",
+    "location": "Location",
+    "bookOnly": "Book only with a",
+    "inAdvance": "payment in advance and pay the rest on the day of your activity.",
+    "date": "Date",
+    "time": "Time",
+    "tax": "Tax",
+    "payNow": "Pay now",
+    "payTour": "Pay on the tour",
+    "total": "Total",
+    "cancellationPolicies": "Cancellation Policies",
+    "1requirement": "Check the requirements",
+    "2travels": "Who travels?",
+    "3pay": "Check and pay",
+
+    "check": "Check the tour requirements",
+    "noCheck": "This experience does not have any special requirements",
+
+    "adventurer": "Adventurer",
+    "adventurer_1": "adventurers",
+    "adventureInfo": "Contact information",
+    "name": "Name",
+    "lastName": "Last name",
+
+    "paymentMethod": "Payment method",
+    "coupon": "Coupon",
+    "card": "Credit or debit card",
+    "fullName": "Full name",
+    "tag1": "Payment options",
+    "tag2": "Subscribe to the Newsletter",
+    "tag3": "Services Agreement",
+    "option_1_1": "Reservation (|%) - the remaining @% must be paid on the day of the tour.",
+    "option_2_1": "I want to receive news from Naw.",
+    "option_3_1": "I agree with the terms and conditions of Naw.",
+    "option_4_1": "I accept the",
+    "option_4_1_a": "Privacy Agreement",
+
+    "payment": "Confirm payment",
+    "discount": "Discount",
+    "validCoupon": "Valid coupon",
+    "notValidCoupon": "Invalid Coupon",
+    "undefined": "Undefined",
+
+    "policy_1": "In case the weather conditions do not allow to carry out the activity, we can reschedule or refund 100% of your payment.",
+    "policy_2": "Your booking has a free cancellation policy up to 48 hours before your activity.",
+    "policy_3": "If you cancel between 48 hrs and 24 hrs you will be charged a 50% last minute cancellation fee.",
+    "policy_4": "If you cancel less than 24 hrs before your activity or you don't show up on the day, you will be charged 100% of the booking.",
+    
+    "pickup_tag_1": "Pick up included: Information for pick up",
+    "pickup_tag_2": "Hotel name with room # (in case you already have it) or AirBnb Adress",
+    "pickup_tag_3": "I will provide the pick up information later",
+
+    "suit_size_tag_1":"Diving gear sizes",
+    "suit_size_tag_2":"Write your shoe size (MX, US or EU), your height and your weight. This way we ensure that your diving gear fits you perfectly"
+}

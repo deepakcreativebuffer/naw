@@ -1,0 +1,238 @@
+/* ------------------------------ *\
+    $LAYOUT NAVBAR
+/* ------------------------------ */
+
+.sty-navbar {
+    position: fixed;
+    z-index: $z-nivel-50;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    height: 5.5vw;
+    transition: background-color 0.3s ease;
+
+    // Fix
+    .dropdown-menu {
+        left: 0;
+        right: 0;
+        min-width: unset;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 0;
+        left: 4.5vw;
+        font-size: $font-size-14;
+    }
+
+    .sty-logo {
+        width: 6em;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    a {
+        color: $color-white-1  !important;
+        font-size: $font-size-14;
+    }
+
+    .nav-link {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+
+        .down {
+            margin-left: 0.5em;
+        }
+    }
+
+    .sty-language {
+        border: solid 1px #fff;
+        padding: 0.3em 1em;
+
+        div {
+            display: inline-flex;
+        }
+
+        .icon-language {
+            width: 1.2em;
+            height: 1.2em;
+            margin-right: 0.5em;
+
+            img {
+                margin: auto;
+                width: 90%;
+                height: 90%;
+            }
+        }
+
+        .icon-money {
+            width: 1.2em;
+            height: 1.2em;
+            margin-right: 0.5em;
+
+            img {
+                margin-top: 1px;
+                width: 90%;
+                height: 90%;
+            }
+        }
+    }
+
+  
+
+    .sty-select-language {
+        .sty-icon {
+            display: inline-flex;
+            height: 1.2em;
+            margin-right: 0.7em;
+
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+
+        .sty-tag {
+            display: inline;
+        }
+    }
+
+    .sty-container-language {
+        display: none;
+        position: absolute;
+        top: 1em;
+        right: 2em;
+        font-size: $font-size-small-10;
+        background-color: unset;
+
+        .sty-language {
+            font-size: $font-size-small-13;
+        }
+
+        .btn-secondary {
+            background-color: unset;
+            border-color: rgba(0, 0, 0, 0);
+        }
+    }
+}
+
+// .sty-navbar:hover,
+.sty-nav-animation {
+    @extend #shadow-1;
+    background-color: $color-brand-6-1;
+
+    .sty-logo {
+        animation: animationLogoTwo 0.5s ease;
+        animation-fill-mode: forwards;
+    }
+}
+
+.sty-nav-animation-two {
+    background-color: rgba(0, 0, 0, 0);
+
+    .sty-logo {
+        animation: animationLogoOne 0.5s ease;
+        animation-fill-mode: forwards;
+    }
+}
+
+.boxMoney {
+
+    .tag {
+        img {
+            margin-right: 5px;
+            margin-top: 4px;
+            margin: auto;
+        }
+    }
+
+}
+
+@keyframes animationLogoOne {
+    0% {
+        width: 6em;
+    }
+
+    100% {
+        width: 12em;
+    }
+}
+
+@keyframes animationLogoTwo {
+    0% {
+        width: 12em;
+    }
+
+    100% {
+        width: 6em;
+    }
+}
+
+@media (max-width: 767px) {
+    .sty-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .sty-navbar {
+        height: 15vw;
+
+        .navbar-collapse {
+            background-color: $color-brand-6-1;
+            margin-top: 0.8em;
+        }
+
+        a {
+            font-size: $font-size-small-18;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(0, 0, 0, 0);
+        }
+
+        .sty-container-language {
+            display: block;
+            display: flex;
+        }
+    }
+
+    .boxMoney {
+        img {
+            width: 12px;
+            height: 12px;
+        }
+
+        .down-icon {
+            width: 8px;
+            height: 8px;
+        }
+
+        .tag {
+            img {
+                margin-right: 5px;
+                margin-top: 1px;
+            }
+        }
+    }
+
+    .sty-navbar .sty-language .icon-money img {
+        margin: auto;
+        /* width: 90%; */
+        /* height: 90%; */
+        margin-top: 2px;
+    }
+
+    .sty-moneySwitch {
+        display: block;
+    }
+
+    .moneySwitch {
+        display: none;
+    }
+}

@@ -1,0 +1,372 @@
+.sty-detail.sty-content-1 {
+    background-color: $color-white-2;
+}
+
+.sty-swipe-resp {
+    position: relative;
+
+    .sty-pinter-no {
+        pointer-events: none;
+    }
+
+    .sty-swipe-link {
+        pointer-events: auto;
+    }
+
+    .sty-logo-resp {
+        padding-top: 20vw;
+
+        img {
+            height: unset;
+        }
+    }
+}
+
+.payment-methods-resp {
+    display: flex;
+    margin-bottom: 2em;
+
+    @media (min-width: 600px) {
+        display: none;
+    }
+}
+
+.payment-methods {
+
+    display: none;
+    width: 100%;
+    justify-content: center;
+
+    @media (min-width: 600px) {
+        display: block;
+        display: flex;
+        margin-top: 2em;
+    }
+}
+
+.payment-methods-icons {
+    margin-left: 20px;
+}
+
+.sty-detail {
+    .sty-content-detail {
+        margin-bottom: 3em;
+        margin-top: 0.5em;
+    }
+
+    .sty-content-section {
+        position: relative;
+        margin-top: 1em;
+        border-bottom: solid 1px $color-gray-3;
+
+        .sty-content {
+            margin-top: 1em;
+            margin-bottom: 1.2em;
+
+            p {
+                margin-top: 0.5em;
+            }
+        }
+    }
+
+    .sty-content-section.sty-fix-1 {
+        border-bottom: unset;
+        margin-top: 3em;
+    }
+
+    .sty-content-section-resp-1 {
+        overflow: hidden;
+        // height: 0;
+
+        transition: 0.2s height ease;
+    }
+
+    .sty-courtain {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        bottom: 0;
+        z-index: 4;
+        -webkit-box-shadow: inset 0px -84px 53px -11px rgba(255, 255, 255, 1);
+        -moz-box-shadow: inset 0px -84px 53px -11px rgba(255, 255, 255, 1);
+        box-shadow: inset 0px -84px 53px -11px rgba(255, 255, 255, 1);
+        transition: 0.2s height ease;
+    }
+
+    #id-show3 {
+        height: 5em;
+    }
+
+    .sty-content-show-arrow {
+        position: absolute;
+        top: 0;
+        right: 0.1em;
+        font-size: 6vw;
+        color: $color-brand-4;
+
+        transition: 0.2s transform ease;
+    }
+
+    .sty-content-show-arrow.select {
+        transform: rotate(-180deg);
+    }
+
+    .sty-content-tripadvisor {
+        margin-top: 2em;
+        width: max-content;
+        margin-bottom: 10px;
+
+        .sty-quater {
+            padding-left: 0.4em;
+            padding-right: 0.4em;
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+            border: solid 3px $color-second-1;
+            color: $color-brand-1;
+        }
+
+        hr {
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+            border-color: $color-second-2;
+        }
+
+        .sty-cont-img {
+            margin: auto;
+            width: 84%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .sty-content-slider {
+        position: relative;
+        margin-top: 1em;
+        border-radius: 0.7em;
+        overflow: hidden;
+        height: 20vw;
+        width: 100%;
+
+        .sty-silders-content {
+            position: relative;
+            height: 20vw;
+            width: 100%;
+        }
+
+        .sty-detail-img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .sty-cursor {
+            position: absolute;
+            cursor: pointer;
+            top: calc(50% - #{$font-size-26 / 2});
+            color: $color-white-1;
+            opacity: 0.3;
+            transition: opacity 0.2s ease;
+
+            svg {
+                height: $font-size-26;
+                width: $font-size-26;
+            }
+        }
+
+        .sty-cursor:hover {
+            opacity: 1;
+        }
+
+        .sty-cursor.sty-arrow-left-slider {
+            left: 1.5em;
+        }
+
+        .sty-cursor.sty-arrow-right-slider {
+            right: 1.5em;
+        }
+    }
+
+    .sty-content-slider.fix-1 {
+        width: 80%;
+        height: 50vw;
+
+        .sty-silders-content {
+            position: relative;
+            height: 50vw;
+            width: 100%;
+        }
+
+        .sty-detail-img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .sty-cursor {
+            position: absolute;
+            cursor: pointer;
+            top: calc(50% - #{$font-size-46 / 2});
+            color: $color-white-1;
+            opacity: 0.3;
+            transition: opacity 0.2s ease;
+
+            svg {
+                height: $font-size-46;
+                width: $font-size-46;
+            }
+        }
+
+        .sty-cursor:hover {
+            opacity: 1;
+        }
+
+        .sty-cursor.sty-arrow-left-slider {
+            left: 1.5em;
+        }
+
+        .sty-cursor.sty-arrow-right-slider {
+            right: 1.5em;
+        }
+    }
+
+    .sty-content-slider.fix-2 {
+        margin-top: 0;
+        border-radius: 0;
+        height: unset;
+
+        .sty-indicators {
+            position: absolute;
+            z-index: $z-nivel-2;
+            bottom: 0;
+            width: 100%;
+
+            // margin: auto;
+            .sty-cont-indicators {
+                position: relative;
+                margin: auto;
+                width: 5em;
+                height: 1.1em;
+                overflow: hidden;
+                margin-bottom: 2em;
+
+                .sty-cont-index {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    bottom: 0;
+                    left: 0;
+                    transition: 0.2s transform, 0.2s height, 0.2s width;
+                    right: 0;
+                    margin: auto;
+                }
+
+                .sty-circle {
+                    display: inline-block;
+                    background-color: #b2b2b4;
+                    border-radius: 50%;
+                    height: 0.3em;
+                    width: 0.3em;
+                    margin-left: 0.35em;
+                    margin-right: 0.35em;
+                }
+
+                .sty-select {
+                    display: inline-block;
+                    background-color: $color-brand-4;
+                    height: 0.7em;
+                    width: 0.7em;
+                    margin-left: 0.15em;
+                    margin-right: 0.15em;
+                }
+
+                .sty-next {
+                    display: inline-block;
+                    background-color: #b2b2b4;
+                    height: 0.5em;
+                    width: 0.5em;
+                    margin-left: 0.25em;
+                    margin-right: 0.25em;
+                }
+            }
+        }
+    }
+
+    .sty-container-slide {
+        height: inherit;
+        width: 100%;
+    }
+
+    .react-datepicker-wrapper {
+        width: 100%;
+    }
+
+    .sty-cont-sticky {
+        position: sticky;
+        top: 7.5vw;
+        z-index: $z-nivel-1;
+    }
+
+    .sty-content-review {
+        .sty-div-1 {
+            margin-top: 0.1em;
+            margin-bottom: 0.7em;
+        }
+    }
+
+    .sty-content-review:not(:last-child) {
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        border-bottom: solid 1px $color-gray-3;
+    }
+
+    .sty-request-resp {
+        margin-top: 2em;
+    }
+
+    .sty-request-button-1 {
+        margin-top: 1em;
+        margin-bottom: 1.3em;
+    }
+}
+
+.sty-detail.sty-cont-gallery {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-courtain-3;
+    z-index: $z-nivel-100;
+}
+
+.sty-detail.sty-cont-gallery.show {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .sty-detail {
+        .sty-content-slider {
+            height: 50vw;
+
+            .sty-silders-content {
+                height: 50vw;
+            }
+        }
+
+        .sty-resp-content-1 {
+            margin-bottom: 1.2em;
+        }
+
+        #id-content-data {
+            height: unset;
+        }
+    }
+}

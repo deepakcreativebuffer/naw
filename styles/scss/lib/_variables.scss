@@ -1,0 +1,250 @@
+/* ------------------------------ *\
+    $COLORS
+/* ------------------------------ */
+
+// Font
+@font-face {
+    font-family: 'Roboto';
+    font-display: block;
+    src: local('Roboto'), url('/static/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RobotoBold';
+    font-display: block;
+    src: local('Roboto'), url('/static/fonts/roboto/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RobotoLight';
+    font-display: block;
+    src: local('Roboto'), url('/static/fonts/roboto/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RobotoThin';
+    font-display: block;
+    src: local('Roboto'), url('/static/fonts/roboto/Roboto-Thin.ttf') format('truetype');
+}
+
+#font-bold-1{
+    font-family: 'RobotoBold';
+}
+#font-bold-2{
+    font-family: 'RobotoBold';
+    letter-spacing: 0.09em;
+}
+#font-bold-3{
+    font-family: 'RobotoBold';
+    letter-spacing: 0.02em;
+}
+#font-bold-5{
+    font-family: 'RobotoBold';
+    letter-spacing: -0.05em;
+}
+
+#font-light-1{
+    font-family: 'RobotoLight';
+}
+#font-light-2{
+    font-family: 'RobotoLight';
+    letter-spacing: 0.09em;
+}
+
+#font-thin-1{
+    font-family: 'RobotoThin';
+}
+
+$font-footer-title: 1em;
+$font-footer-content: 0.65em;
+
+$font-title-1: 1em;
+$font-content-1: 0.75em;
+$font-link-1: 0.9em;
+
+$font-button-1: 0.9em;
+
+$font-number-1: 4em;
+$font-number-2: 1em;
+
+// Branding Colors
+$color-brand-1: #10306b;
+$color-brand-2: #243736;
+$color-brand-3: #192B49;
+$color-brand-3-1: rgba(25, 43, 73, 0.95);
+$color-brand-4: #00E6E6;
+$color-brand-4-1: rgb(22, 172, 172);
+$color-brand-5: #283636;
+$color-brand-5-1: #415858;
+$color-brand-6: #109BA5;
+$color-brand-6-1: rgba(16, 155, 165, 0.97);
+
+$color-second-1: #00a680;
+$color-second-2: #006699;
+
+$color-gray-1: #6C7688;
+$color-gray-2: #9fa3a7;
+$color-gray-3: #9fa3a7;
+$color-gray-4: #4A4A4A;
+$color-gray-5: #E4E4E4;
+
+$color-white-1: #fff;
+$color-white-2: #f8f8f8;
+$color-black-1: #000;
+$color-black-2: #283636;
+
+$color-brand-1-1: #02c1d3;
+
+$color-second-3: #d62363;
+$color-second-4: #f09d29;
+
+$color-gray-6: #e0e0e0;
+$color-gray-7: #9f9f9f;
+$color-gray-8: #b5b5b5;
+$color-gray-9: #9b9b9b;
+$color-gray-10: #ebebeb;
+$color-gray-11: #5f5f5f;
+$color-gray-12: #ddd;
+
+// Courtains Colors
+$color-courtain-1: rgba($color: #000000, $alpha: 0.5);
+$color-courtain-2: rgba(16, 48, 107, 0.7);
+$color-courtain-3: rgba(0, 0, 0, 0.7);
+
+//gradient
+$gradient-1: linear-gradient(180deg, rgba(16,48,107,1) 22%, rgba(19,0,255,1) 90%, rgba(0,212,255,0) 100%);
+
+// Z-index
+$z-nivel-0: 0;
+$z-nivel-1: 1;
+$z-nivel-2: 2;
+$z-nivel-3: 3;
+$z-nivel-50: 50;
+$z-nivel-100: 100;
+$z-nivel-1000: 1000;
+
+// Shadows
+$shadow1: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+$shadow2: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+
+$shadow3: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+$shadow4: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+$shadow5: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
+$shadow6: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+$shadow7: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+$shadow8: -2px -4px 6px 0 rgba(0, 0, 0, 0.16);
+$shadow-text: 2px 2px 8px rgba(0, 0, 0, 0.9);
+
+#shadow-1{
+    -ms-box-shadow: $shadow1;
+    -o-box-shadow: $shadow1;
+    -moz-box-shadow: $shadow1;
+    -webkit-box-shadow: $shadow1;
+    box-shadow: $shadow1;
+}
+#shadow-2{
+    -ms-box-shadow: $shadow2;
+    -o-box-shadow: $shadow2;
+    -moz-box-shadow: $shadow2;
+    -webkit-box-shadow: $shadow2;
+    box-shadow: $shadow2;
+}
+
+#shadow-3{
+    -ms-box-shadow: $shadow3;
+    -o-box-shadow: $shadow3;
+    -moz-box-shadow: $shadow3;
+    -webkit-box-shadow: $shadow3;
+    box-shadow: $shadow3;
+}
+#shadow-4{
+    -ms-box-shadow: $shadow4;
+    -o-box-shadow: $shadow4;
+    -moz-box-shadow: $shadow4;
+    -webkit-box-shadow: $shadow4;
+    box-shadow: $shadow4;
+}
+#shadow-5{
+    -ms-box-shadow: $shadow5;
+    -o-box-shadow: $shadow5;
+    -moz-box-shadow: $shadow5;
+    -webkit-box-shadow: $shadow5;
+    box-shadow: $shadow5;
+}
+#shadow-6{
+    -ms-box-shadow: $shadow6;
+    -o-box-shadow: $shadow6;
+    -moz-box-shadow: $shadow6;
+    -webkit-box-shadow: $shadow6;
+    box-shadow: $shadow6;
+}
+#shadow-7{
+    -ms-box-shadow: $shadow7;
+    -o-box-shadow: $shadow7;
+    -moz-box-shadow: $shadow7;
+    -webkit-box-shadow: $shadow7;
+    box-shadow: $shadow7;
+}
+#shadow-8{
+    -ms-box-shadow: $shadow8;
+    -o-box-shadow: $shadow8;
+    -moz-box-shadow: $shadow8;
+    -webkit-box-shadow: $shadow8;
+    box-shadow: $shadow8;
+}
+
+// Sizes
+$size-heigth-nav: 6vw;
+$size-heigth-nav-bottom: 3em;
+$size-heigth-nav-middle: $size-heigth-nav / 2;
+
+
+@function font-resize($size){
+    @return (($size*4.6)/60)*1vw
+}
+//Font responsive
+$font-size-150: font-resize(150);
+$font-size-60: font-resize(60);
+$font-size-46: font-resize(46);
+$font-size-40: font-resize(40);
+$font-size-32: font-resize(32);
+$font-size-30: font-resize(30);
+$font-size-28: font-resize(28);
+$font-size-25: font-resize(25);
+$font-size-26: font-resize(26);
+$font-size-22: font-resize(22);
+$font-size-23: font-resize(23);
+$font-size-20: font-resize(20);
+$font-size-19: font-resize(19);
+$font-size-18: font-resize(18);
+$font-size-16: font-resize(16);
+$font-size-15: font-resize(15);
+$font-size-14: font-resize(14);
+$font-size-13: font-resize(13);
+$font-size-12: font-resize(12);
+$font-size-11: font-resize(11);
+$font-size-10: font-resize(10);
+
+@function font-resize-small($size){
+    @return (($size*4.5)/20)*1vw
+}
+
+$font-size-small-150: font-resize-small(150);
+$font-size-small-60: font-resize-small(60);
+$font-size-small-46: font-resize-small(46);
+$font-size-small-40: font-resize-small(40);
+$font-size-small-35: font-resize-small(35);
+$font-size-small-32: font-resize-small(32);
+$font-size-small-30: font-resize-small(30);
+$font-size-small-28: font-resize-small(28);
+$font-size-small-25: font-resize-small(25);
+$font-size-small-26: font-resize-small(26);
+$font-size-small-22: font-resize-small(22);
+$font-size-small-23: font-resize-small(23);
+$font-size-small-20: font-resize-small(20);
+$font-size-small-19: font-resize-small(19);
+$font-size-small-18: font-resize-small(18);
+$font-size-small-16: font-resize-small(16);
+$font-size-small-15: font-resize-small(15);
+$font-size-small-14: font-resize-small(14);
+$font-size-small-13: font-resize-small(13);
+$font-size-small-12: font-resize-small(12);
+$font-size-small-11: font-resize-small(11);
+$font-size-small-10: font-resize-small(10);

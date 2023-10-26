@@ -1,0 +1,21 @@
+{
+    "outstanding": "Featured",
+    "description": "Description",
+    "includes": "Includes",
+    "notIncludes": "Does not include",
+    "where": "Where will we meet?",
+    "requirements": "Requirements",
+    "recommendations": "Recommendations",
+    "reviews": "Reviews",
+    "size": "Size",
+    "perPerson": "per person",
+    "noDate": "No dates available",
+
+    "date": "Date",
+    "hour": "Hour",
+    "adventurous": "Adventurers",
+
+    "tag_1": "Duration",
+    "tag_2": "Location",
+    "tag_3": "Maximum @ people"
+}

@@ -1,0 +1,31 @@
+// Librerias, Settings y Variables
+@import "lib/variables";
+@import "lib/hamburgers-settings";
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+// @import "lib/mixins";
+
+// Base
+@import "base/fonts";
+@import "base/buttons";
+@import "base/checkbox";
+@import "base/sliders";
+@import "base/forms";
+@import "base/modal";
+@import "base/utility";
+@import "base/input";
+@import "base/load";
+@import "base/cards";
+@import "base/fix";
+
+// Layout
+@import "layout/layout";
+@import "layout/nav";
+@import "layout/footer";
+@import "layout/about_us";
+@import "layout/contact";
+@import "layout/search";
+@import "layout/detail";
+@import "layout/reserve";
+@import "layout/landing";
+
+@import "layout/home";

@@ -1,0 +1,9 @@
+{
+    "validation_1": "Valor requerido",
+    "validation_2": "Formato inválido",
+    "validation_3": "Elimina espacios en blanco",
+    "validation_4": "Seleccionar casilla",
+    "mesage_1": "Mensaje enviado con éxito",
+    "mesage_2": "Estamos procesando tu pago",
+    "mesage_3": "Suscripción realizada con éxito"
+}

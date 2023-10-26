@@ -1,0 +1,496 @@
+/* ------------------------------ *\
+    $BASE UTILITY
+/* ------------------------------ */
+
+/*BOOTSTRAP*/
+.sty-padding-all{
+    padding: 0;
+}
+.sty-padding-sides{
+    padding-left: 0;
+    padding-right: 0;
+}
+.sty-content-hidden{
+    height: 0px;
+    overflow: hidden;
+}
+.sty-uty-min-height-parent{
+   min-height: inherit; 
+}
+.dropdown-item{
+    padding: 0.5em 1em;
+}
+.sty-width-100{
+    width: 100%;
+}
+
+/*JUSTIFY*/
+.sty-justify-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sty-justify-content-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+.sty-justify-content-center{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sty-justify-content-vertical{
+    display: flex;
+    align-items: center;
+}
+
+/*IMAGES*/
+#sty-cont-img{
+    width: 100%;
+    height: auto;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.sty-uti-img-100{
+    @extend #sty-cont-img;
+}
+
+.sty-uti-img-80{
+    @extend #sty-cont-img;
+    width: 80%;
+}
+
+.sty-uti-img-35{
+    @extend #sty-cont-img;
+    width: 35%;
+}
+
+/*CIRCLE PIC*/
+#sty-circle-pic {
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    // border-style: solid;
+    // border-color: #eef2f8;
+    // border-width: 0.2em;
+    // background-color: #eef2f8;
+}
+#sty-circle-pic-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.sty-circle-pic-1{
+    @extend #sty-circle-pic;
+    width: 9em;
+    height: 9em;
+    margin: auto;
+    img{
+        @extend #sty-circle-pic-img;
+    }
+}
+.sty-circle-pic-2{
+    @extend #sty-circle-pic;
+    width: 8em;
+    height: 8em;
+    img{
+        @extend #sty-circle-pic-img;
+    }
+}
+
+/*BACKGROUND IMAGE*/
+#sty-uti-background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.sty-uti-background-100{
+    @extend #sty-uti-background;
+    width: 100%;
+}
+
+.sty-uti-background{
+    width: 100%;
+    height: 100%;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@supports(object-fit: cover){
+    .sty-uti-background img{
+      height: inherit;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+/*-----fonts*/
+.sty-uty-font-60-1{
+    font-size: $font-size-60;
+    color: $color-white-1;
+}
+.sty-uty-font-1-46-1{
+    font-family: "RockSalt";
+    font-size: $font-size-46;
+}
+.sty-uty-font-1-46-2{
+    font-family: "RockSalt";
+    font-size: $font-size-46;
+}
+.sty-uty-font-46-1{
+    font-size: $font-size-46;
+    color: $color-white-1;
+}
+.sty-uty-font-30-1{
+    font-size: $font-size-30;
+    color: $color-black-2;
+}
+.sty-uty-font-30-2{
+    font-size: $font-size-30;
+    color: $color-white-1;
+}
+.sty-uty-font-30-3{
+    font-size: $font-size-30;
+    color: $color-brand-4;
+}
+.sty-uty-font-1-30-1{
+    font-family: "RockSalt";
+    font-size: $font-size-30;
+    color: $color-black-2;
+}
+.sty-uty-font-23-1{
+    font-size: $font-size-23;
+    color: $color-white-1;
+}
+.sty-uty-font-23-2{
+    font-size: $font-size-23;
+    color: $color-black-1;
+}
+.sty-uty-font-1-23-1{
+    font-family: "MontserratBold";
+    font-size: $font-size-23;
+    color: $color-black-1;
+}
+.sty-uty-font-23-3{
+    font-size: $font-size-23;
+    color: $color-white-1;
+}
+.sty-uty-font-1-20-1{
+    font-family: "MontserratBold";
+    font-size: $font-size-20;
+}
+.sty-uty-font-1-18-2{
+    font-family: "MontserratBold";
+    font-size: $font-size-18;
+}
+.sty-uty-font-1-15-1{
+    font-family: "MontserratLight";
+    font-size: $font-size-15;
+}
+.sty-uty-font-1-14-1{
+    font-family: "MontserratLight";
+    font-size: $font-size-14;
+}
+.sty-uty-font-1-14-2{
+    font-family: "MontserratBold";
+    font-size: $font-size-14;
+    color: $color-black-1;
+}
+.sty-uty-font-20-1{
+    font-size: $font-size-20;
+    color: $color-white-1;
+}
+.sty-uty-font-20-2{
+    font-size: $font-size-20;
+}
+.sty-uty-font-18-1{
+    font-size: $font-size-18;
+    color: $color-black-1;
+}
+.sty-uty-font-18-2{
+    font-weight: 100;
+    font-size: $font-size-18;
+    color: $color-black-1;
+}
+.sty-uty-font-16-1{
+    font-size: $font-size-16;
+    color: $color-black-1;
+}
+.sty-uty-font-16-2{
+    font-size: $font-size-16;
+    color: $color-gray-3;
+}
+.sty-uty-font-15-1{
+    font-size: $font-size-15;
+    color: $color-black-1;
+}
+.sty-uty-font-15-2{
+    font-size: $font-size-15;
+    color: $color-white-1;
+}
+.sty-uty-font-15-3{
+    font-size: $font-size-15;
+    color: $color-gray-2;
+}
+.sty-uty-font-14-1{
+    font-size: $font-size-14;
+    color: $color-black-1;
+}
+.sty-uty-font-13-1{
+    font-size: $font-size-13;
+    color: $color-brand-4;
+}
+.sty-uty-font-12-1{
+    font-size: $font-size-12;
+    color: $color-black-1;
+}
+.sty-uty-font-12-2{
+    font-size: $font-size-12;
+    color: $color-gray-1;
+}
+.sty-uty-font-10-1{
+    font-size: $font-size-10;
+    color: $color-gray-1;
+}
+/*-----fonts*/
+
+
+/*LINK*/
+.sty-uty-link-1:hover{
+    text-decoration: unset;
+    color: $color-brand-2;
+}
+.sty-uty-link-2:hover{
+    text-decoration: unset;
+    color: $color-brand-1-1;
+}
+
+/*Courtain*/
+#sty-uty-curtain{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sty-uty-curtain-1{
+    @extend #sty-uty-curtain;
+    // background-color: $color-courtain-6;
+}
+
+/*Padding*/
+.sty-uty-padding-section-1{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+.sty-uty-padding-section-2{
+    padding-top: 11vw;
+    padding-bottom: 9vw;
+}
+.sty-uty-padding-section-3{
+    padding-top: 21vw;
+    padding-bottom: 9vw;
+}
+
+/*Section Pic Background*/
+#courtain-style{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.sty-uty-section-pic-brackground{
+    position: relative;
+
+    .sty-curtain-1{
+        @extend #courtain-style;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.44) 9%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0) 73%, rgba(0, 0, 0, 0) 100%);
+    }
+    .sty-curtain-2{
+        @extend #courtain-style;
+        // background-color: $color-courtain-2;
+    }
+    .sty-curtain-3{
+        @extend #courtain-style;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(3, 3, 3, 0.54) 9%, rgba(22, 22, 22, 0.51) 45%, rgba(67, 67, 67, 0.1) 73%, rgba(84, 84, 84, 0) 100%);
+    }
+}
+
+.sty-curtain-1{
+    @extend #courtain-style;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.44) 9%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0) 73%, rgba(0, 0, 0, 0) 100%);
+}
+
+.sty-uty-back-section{
+    position: absolute;
+    z-index: $z-nivel-0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@supports(object-fit: cover){
+    .sty-uty-back-section img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+// HEADER LAYOUT
+.sty-header-layout{
+    .sty-title{
+        color: $color-white-1;
+        // font-size: $font-size-46;
+    }
+}
+
+// MENU CONTENT
+.sty-uty-drop-menu-content-1{
+    min-width: 29em !important;
+}
+.sty-uty-drop-menu-content-2{
+    min-width: 20em !important;
+    .dropdown-item{
+        white-space: normal
+    }
+}
+
+
+
+@media (max-width: 767px){
+    .sty-uty-font-60-1{
+        font-size: $font-size-small-60;
+    }
+    .sty-uty-font-46-1{
+        font-size: $font-size-small-46;
+    }
+    .sty-uty-font-1-46-1{
+        font-size: $font-size-small-46;
+    }
+    .sty-uty-font-1-46-1{
+        font-size: $font-size-small-35;
+    }
+    .sty-uty-font-30-1{
+        font-size: $font-size-small-30;
+    }
+    .sty-uty-font-30-2{
+        font-size: $font-size-small-30;
+    }
+    .sty-uty-font-30-3{
+        font-size: $font-size-small-30;
+    }
+    .sty-uty-font-1-30-1{
+        font-size: $font-size-small-30;
+    }
+    .sty-uty-font-1-23-1{
+        font-size: $font-size-small-23;
+    }
+    .sty-uty-font-23-1{
+        font-size: $font-size-small-23;
+    }
+    .sty-uty-font-23-2{
+        font-size: $font-size-small-23;
+    }
+    .sty-uty-font-23-3{
+        font-size: $font-size-small-23;
+    }
+    .sty-uty-font-1-20-1{
+        font-size: $font-size-small-20;
+    }
+    .sty-uty-font-1-18-2{
+        font-family: "Roboto";
+        font-size: $font-size-small-18;
+    }
+    .sty-uty-font-1-15-1{
+        font-size: $font-size-small-15;
+    }
+    .sty-uty-font-1-14-1{
+        font-size: $font-size-small-14;
+    }
+    .sty-uty-font-1-14-2{
+        font-size: $font-size-small-14;
+    }
+    .sty-uty-font-20-1{
+        font-size: $font-size-small-20;
+    }
+    .sty-uty-font-20-2{
+        font-size: $font-size-small-20;
+    }
+    .sty-uty-font-18-1{
+        font-size: $font-size-small-18;
+    }
+    .sty-uty-font-18-2{
+        font-size: $font-size-small-18;
+    }
+    .sty-uty-font-16-1{
+        font-size: $font-size-small-16;
+    }
+    .sty-uty-font-16-2{
+        font-size: $font-size-small-16;
+    }
+    .sty-uty-font-15-1{
+        font-size: $font-size-small-15;
+    }
+    .sty-uty-font-15-2{
+        font-size: $font-size-small-15;
+    }
+    .sty-uty-font-15-3{
+        font-size: $font-size-small-15;
+    }
+    .sty-uty-font-14-1{
+        font-size: $font-size-small-14;
+    }
+    .sty-uty-font-13-1{
+        font-size: $font-size-small-13;
+    }
+    .sty-uty-font-12-1{
+        font-size: $font-size-small-12;
+    }
+    .sty-uty-font-12-2{
+        font-size: $font-size-small-12;
+    }
+    .sty-uty-font-10-1{
+        font-size: $font-size-small-10;
+    }
+}
+
+.sty-content-show-resp{
+    display: none;
+}
+
+@media (max-width: 767px){
+    .sty-content-hidden-resp{
+        display: none;
+    }
+
+    .sty-content-show-resp{
+        display: block;
+    }
+}

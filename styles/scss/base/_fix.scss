@@ -1,0 +1,19 @@
+
+
+.react-tel-input{
+    .form-control{
+        font-size: $font-size-15 !important;
+        width: 100% !important;
+        height: 2.2em !important;
+        border-color: #9fa3a7 !important;
+    }
+}
+
+
+@media (max-width: 767px){
+    .react-tel-input{
+        .form-control{
+            font-size: $font-size-small-15 !important;
+        }
+    }
+}
