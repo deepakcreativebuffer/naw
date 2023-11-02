@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import App, { Container } from "next/app";
@@ -10,8 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/scss/styles.scss"
 
 const reducer = combineReducers({
-    form: formReducer,
-    reducerNavigation: navigation
+  form: formReducer,
+  reducerNavigation: navigation
 });
 
 /**
@@ -23,88 +23,68 @@ const reducer = combineReducers({
 * @param {string} options.storeKey This key will be used to preserve store in global namespace for safe HMR 
 */
 const makeStore = (initialState, options) => {
-    return createStore(reducer, initialState);
+  return createStore(reducer, initialState);
+};
+
+export const setMoneyTypeInContext = async (context) => {
+  try {
+    const moneytpe = localStorage.getItem("moneyType");
+    console.log("moneytpe",moneytpe)
+    if(!moneytpe){
+    const ipResponse = await fetch('http://ip-api.com/json');
+    if (ipResponse.ok) {
+      const userLocation = await ipResponse.json();
+      
+      let moneyType;
+      if (userLocation.country === 'Mexico') {
+        moneyType = 'USD';
+      } else if (userLocation.country === 'India') {
+        moneyType = 'EUR';
+      } else if (userLocation.country === 'Spain') {
+        moneyType = 'MXN';
+      }
+      localStorage.setItem("moneyType",moneyType)
+      context.setMoneyType(moneyType);
+    }}else{
+      context.setMoneyType(moneytpe)
+    }
+  } catch (error) {
+    console.error("Error fetching user location:", error);
+  }
 };
 
 class MyApp extends App {
-    constructor(props) {
-        super(props);
-        this.state = {
-          moneyType:  "MXN",
-          setMoneyType: this.setMoneyType
-        };
-      } 
+  constructor(props) {
+    super(props);
 
-
-  
-    setMoneyType = moneyType => {
-        this.setState({ moneyType });
+    this.state = {
+      moneyType: null, // Set the initial moneyType to null
+      setMoneyType: this.setMoneyType
     };
- 
-    // state = {
-    //     moneyType: "USA",
-    //     setMoneyType: this.setMoneyType
-    // };
+  }
 
-    static async getInitialProps({ Component, ctx }) {
-            try {
-              console.log("abca")
-              const ipResponse = await fetch('http://ip-api.com/json');
-              console.log("abcaasdasdasdasd")
+  async componentDidMount() {
+    // Call setMoneyTypeInContext to set the money type based on the user's location
+    await setMoneyTypeInContext(this);
+  }
 
-              if (ipResponse.ok) {
-                const userLocation = await ipResponse.json(); 
+  setMoneyType = moneyType => {
+    this.setState({ moneyType });
+    localStorage.setItem("moneyType",moneyType);
+  };
 
-                console.log("location>>>>>>>>>>>",userLocation)
-
-                let moneyType;
-                if (userLocation.country === 'Mexico') {
-                  moneyType = 'USD';   
-              
-                    this.setState({ moneyType });
-                              
-                } else if(userLocation.country === 'India') {
-                  moneyType = 'MXN';
-                
-                    this.setState({ moneyType });
-                
-                } else if (userLocation.country === 'Spain'){
-                    moneyType = 'EUR';
-                }else{
-                  moneyType = 'USD'; 
-                }
-                console.log("moneyType>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", moneyType)
-      
-                // Pass the moneyType as a prop to your component
-                const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
-                return { pageProps, moneyType };
-              } else {
-                console.error('Failed to fetch IP location data');
-              }
-            } catch (error) {
-              console.error('Error while fetching IP location data:', error);
-            }
-        
-            const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
-            console.log("moneyType>>>>>>>>>>>>>>>>>>>", moneyType)
-            return { pageProps, moneyType };
-          }
-
-
-    render() {
-        const { Component, pageProps, store  } = this.props;
-        return (
-            <Container>
-                <MoneyContext.Provider value={this.state}>
-                    <Provider store={store}>
-                        <Component {...pageProps} />
-                    </Provider>
-                </MoneyContext.Provider>
-
-            </Container>
-        );
-    }
-
+  render() {
+    const { Component, pageProps, store } = this.props;
+    return (
+      <Container>
+        <MoneyContext.Provider value={this.state}>
+          <Provider store={store}>
+            <Component {...pageProps} />
+          </Provider>
+        </MoneyContext.Provider>
+      </Container>
+    );
+  }
 }
 
 export default withRedux(makeStore)(MyApp);
