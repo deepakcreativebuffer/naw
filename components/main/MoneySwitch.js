@@ -19,7 +19,9 @@ class MoneySwitch extends Component {
         return (
             <MoneyContext.Consumer>
                 {({ moneyType, setMoneyType }) => {     
-                    console.log("setMoneyType",setMoneyType)           
+                    // console.log("moneyType>>>",moneyType)    
+                    
+                                  
                     return(
 
                     <Fragment>

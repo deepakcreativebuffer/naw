@@ -129,6 +129,10 @@
     .sty-logo {
         animation: animationLogoTwo 0.5s ease;
         animation-fill-mode: forwards;
+        img {
+            height: 70px;
+            width: auto;
+        }
     }
 }
 
@@ -138,6 +142,8 @@
     .sty-logo {
         animation: animationLogoOne 0.5s ease;
         animation-fill-mode: forwards;
+      
+
     }
 }
 
@@ -173,11 +179,84 @@
     }
 }
 
+
+@media (max-width: 1300px) {
+
+    .sty-nav-animation {
+    
+        background-color: $color-brand-6-1;
+    
+        .sty-logo {
+            animation: animationLogoTwo 0.5s ease;
+            animation-fill-mode: forwards;
+            img {
+                height: 60px;
+                width: auto;
+            }
+        }
+    }
+
+}
+@media (min-width: 767px) {
+
+    .sty-nav-animation {
+    
+        background-color: $color-brand-6-1;
+    
+        .sty-logo {
+            animation: animationLogoTwo 0.5s ease;
+            animation-fill-mode: forwards;
+            img {
+                height: 40px;
+                width: auto;
+            }
+        }
+    }
+
+}
+@media (min-width: 1080px) {
+
+    .sty-nav-animation {
+    
+        background-color: $color-brand-6-1;
+    
+        .sty-logo {
+            animation: animationLogoTwo 0.5s ease;
+            animation-fill-mode: forwards;
+            img {
+                height: 60px;
+                width: auto;
+            }
+        }
+    }
+
+}
+@media (min-width: 1880px) {
+
+    .sty-nav-animation {
+    
+        background-color: $color-brand-6-1;
+    
+        .sty-logo {
+            animation: animationLogoTwo 0.5s ease;
+            animation-fill-mode: forwards;
+            img {
+                height: 100px;
+                width: auto;
+            }
+        }
+    }
+
+}
+
 @media (max-width: 767px) {
     .sty-logo {
         display: none;
     }
 }
+
+
+
 
 @media (max-width: 767px) {
     .sty-navbar {

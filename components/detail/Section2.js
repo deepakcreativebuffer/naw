@@ -86,7 +86,6 @@ class Layout extends Component {
 
     componentDidMount = async () => {
         let { languageLocal } = this.props
-console.log("languageLocal",languageLocal)
         if (languageLocal == 'es') {
             this.props.setLanguage('es')
             i18n.changeLanguage('es')

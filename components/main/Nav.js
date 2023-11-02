@@ -107,9 +107,7 @@ class NavBar extends Component {
   handleActivities = async () => {
     let { valueLanguage } = this.props
     let result = await request(endPoints.get_adventure_type, null, null, valueLanguage)
-    console.log(result);
     let dataAdventure = result?.objects
-    console.log("valueLanguage",valueLanguage)
 
     let elementsActivities = []
     let tempArray = []
@@ -206,7 +204,6 @@ class NavBar extends Component {
   handleChangeLanguage = (e) => {
     let { setLanguage } = this.props
     let language = e.currentTarget.id;
-    console.log("props>>> ",this.props,)
     localStorage.setItem("lang",language)
     setLanguage(language)
     i18n.changeLanguage(language)

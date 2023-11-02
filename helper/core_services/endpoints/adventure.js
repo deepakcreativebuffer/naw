@@ -1,5 +1,8 @@
 import constants from '../../enviroment/environment'
 
+    
+console.log("constants.api_url >>", constants.api_url)
+
 const get_categories = {
     'url': `${constants.api_url}/adventures/api/category/`,
     'typeRequest': 'get',

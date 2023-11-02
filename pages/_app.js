@@ -30,7 +30,7 @@ class MyApp extends App {
     constructor(props) {
         super(props);
         this.state = {
-          moneyType: props.moneyType || "USA",
+          moneyType:  "MXN",
           setMoneyType: this.setMoneyType
         };
       } 
@@ -48,18 +48,32 @@ class MyApp extends App {
 
     static async getInitialProps({ Component, ctx }) {
             try {
+              console.log("abca")
               const ipResponse = await fetch('http://ip-api.com/json');
+              console.log("abcaasdasdasdasd")
+
               if (ipResponse.ok) {
                 const userLocation = await ipResponse.json(); 
 
+                console.log("location>>>>>>>>>>>",userLocation)
+
                 let moneyType;
-                if (userLocation.country === 'India') {
-                  moneyType = 'USD';                  
-                } else if(userLocation.country === 'Mexico') {
+                if (userLocation.country === 'Mexico') {
+                  moneyType = 'USD';   
+              
+                    this.setState({ moneyType });
+                              
+                } else if(userLocation.country === 'India') {
                   moneyType = 'MXN';
+                
+                    this.setState({ moneyType });
+                
                 } else if (userLocation.country === 'Spain'){
                     moneyType = 'EUR';
+                }else{
+                  moneyType = 'USD'; 
                 }
+                console.log("moneyType>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", moneyType)
       
                 // Pass the moneyType as a prop to your component
                 const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
@@ -72,7 +86,8 @@ class MyApp extends App {
             }
         
             const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
-            return { pageProps, moneyType: 'USD' };
+            console.log("moneyType>>>>>>>>>>>>>>>>>>>", moneyType)
+            return { pageProps, moneyType };
           }
 
 

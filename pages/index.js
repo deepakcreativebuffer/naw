@@ -18,7 +18,7 @@ export default class extends React.Component{
     static async getInitialProps({ ctx, req, res, query, asPath }) {
 
         try {
-            let [reqDestination, reqExtras, reqIp] = await Promise.all([
+            let [reqDestination, reqExtras] = await Promise.all([
                 request(endPoints1.get_destination),
                 request(endPoints2.get_extras, null, null, 'es'),
             ])
@@ -39,14 +39,14 @@ export default class extends React.Component{
           
             let dataDestination = await reqDestination.objects
             let dataExtras = await reqExtras.object
-      
-                
+            
+            console.log("dataDestination>>>>>>>>>>>",dataDestination)
             return {
                 statusCode: 200,
                 dataDestination,
                 dataExtras,
                 ipData
-
+                
             }
         } catch(e) {
             return {
