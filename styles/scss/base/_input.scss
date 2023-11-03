@@ -249,6 +249,57 @@
 
 }
 
+@media (min-width: 1560px){
+    .sty-select-1{
+        position: relative;
+        width: 100%;
+        border: unset;
+        background-color: $color-white-1;
+        border-radius: 0.2em;
+        padding: 0.45em 0.5em;
+        text-align: left;
+    
+        .sty-content-select{
+            .sty-icon{
+                display: inline-flex;
+                height: 1.4em;
+                margin-right: 1em;
+                padding-top:6px
+            }
+            .sty-tag{
+                display: inline;
+                color: $color-gray-1;
+            }
+        }
+    }
+
+}
+@media (min-width: 1700px){
+    .sty-select-1{
+        position: relative;
+        width: 100%;
+        border: unset;
+        background-color: $color-white-1;
+        border-radius: 0.2em;
+        padding: 0.45em 0.5em;
+        text-align: left;
+    
+        .sty-content-select{
+            .sty-icon{
+                display: inline-flex;
+                height: 1.4em;
+                margin-right: 1em;
+                padding-top:8px
+            }
+            .sty-tag{
+                display: inline;
+                color: $color-gray-1;
+            }
+        }
+    }
+
+}
+
 @media (min-width: 1880px){
     .sty-select-1{
         position: relative;
