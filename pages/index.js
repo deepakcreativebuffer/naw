@@ -14,6 +14,7 @@ export default class extends React.Component{
     constructor(props){
         super(props)
     }
+    debugger;
 
     static async getInitialProps({ ctx, req, res, query, asPath }) {
 
@@ -22,6 +23,9 @@ export default class extends React.Component{
                 request(endPoints1.get_destination),
                 request(endPoints2.get_extras, null, null, 'es'),
             ])
+            console.log("reqDestination>>>>",reqDestination)
+            console.log("reqExtras>>>>",reqExtras)
+            debugger;
             if( reqDestination.status >= 400 
                 || reqExtras.status >= 400) {
                     var status = null
@@ -40,7 +44,8 @@ export default class extends React.Component{
             let dataDestination = await reqDestination.objects
             let dataExtras = await reqExtras.object
             
-            console.log("dataDestination>>>>>>>>>>>",dataDestination)
+            console.log("dataDestination>>>>>>>>>>>Index ",dataDestination)
+            console.log("dataExtras>>>>>>>>>>>Index",dataExtras)
             return {
                 statusCode: 200,
                 dataDestination,
@@ -60,7 +65,7 @@ export default class extends React.Component{
 
     render(){
         const { dataDestination, dataExtras  } = this.props
-// console.log("PROPS>>>",this.props)
+console.log("PROPS>>>",this.props)
         return <Layout
             title={dataExtras?.seoInfo?.metaTitle}
             description={dataExtras?.seoInfo?.metaDescription}

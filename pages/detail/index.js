@@ -28,18 +28,21 @@ class Page extends React.Component{
         let languageLocal = null
 
         try {
-            let [reqDestination, reqAdventureEs, reqAdventureEn] = await Promise.all([
-                request(endPoints1.get_destination),
+            let [reqDestinationEs,reqDestinationEn, reqAdventureEs, reqAdventureEn] = await Promise.all([
+                request(endPoints1.get_destination,null,uuid,'es'),
+                request(endPoints1.get_destination,null,uuid,'en'),
                 request(endPoints2.get_adventure_detail, null, uuid, 'es'),
                 request(endPoints2.get_adventure_detail, null, uuid, 'en'),
             ])
 
-            if( reqDestination.status >= 400 
+            if( reqDestinationEs.status >= 400 ||reqDestinationEn.status >= 400
                 || reqAdventureEs.status >= 400 
                 || reqAdventureEn.status >= 400 ) {
                 var status = null
-                if(reqDestination.status != 400 )
-                    status = reqDestination.status
+                if(reqDestinationEs.status != 400 )
+                    status = reqDestinationEs.status
+                    if(reqDestinationEn.status != 400 )
+                    status = reqDestinationEn.status
                 if(reqAdventureEs.status != 400 )
                     status = reqAdventureEs.status
                 if(reqAdventureEn.status != 400 )
@@ -54,19 +57,23 @@ class Page extends React.Component{
                 }
             }
         
-            let dataDestination = await reqDestination.objects
+            let dataDestinationEs = await reqDestinationEs.objects
+            let dataDestinationEn = await reqDestinationEn.objects
             let dataDetailEs = await reqAdventureEs.object
             let dataDetailEn = await reqAdventureEn.object
             let dataDetail = {}
+        let dataDestination= []
             console.log("dataDestination>>>>",dataDestination)
             console.log("dataDetailEs>>>>",dataDetailEs)
             console.log("dataDetailEn>>>>",dataDetailEn)
 
             if(slug(dataDetailEs.title).toLowerCase()==tour){
                 dataDetail = dataDetailEs
+                dataDestination = dataDestinationEs 
                 languageLocal='es'
             }else{
                 dataDetail = dataDetailEn
+                dataDestination = dataDestinationEn 
                 languageLocal='en'
             }
         

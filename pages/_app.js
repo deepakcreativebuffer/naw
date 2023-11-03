@@ -29,19 +29,21 @@ const makeStore = (initialState, options) => {
 export const setMoneyTypeInContext = async (context) => {
   try {
     const moneytpe = localStorage.getItem("moneyType");
-    console.log("moneytpe",moneytpe)
     if(!moneytpe){
     const ipResponse = await fetch('http://ip-api.com/json');
     if (ipResponse.ok) {
       const userLocation = await ipResponse.json();
       
+      console.log("userLocation",userLocation)
       let moneyType;
-      if (userLocation.country === 'Mexico') {
+      if (userLocation.country === 'Spain') {
         moneyType = 'USD';
       } else if (userLocation.country === 'India') {
         moneyType = 'EUR';
-      } else if (userLocation.country === 'Spain') {
+      } else if (userLocation.country === 'Mexico') {
         moneyType = 'MXN';
+      }else{
+        moneyType = 'USD';
       }
       localStorage.setItem("moneyType",moneyType)
       context.setMoneyType(moneyType);
