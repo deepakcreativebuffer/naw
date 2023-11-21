@@ -62,10 +62,7 @@ class Page extends React.Component{
             let dataDetailEs = await reqAdventureEs.object
             let dataDetailEn = await reqAdventureEn.object
             let dataDetail = {}
-        let dataDestination= []
-            console.log("dataDestination>>>>",dataDestination)
-            console.log("dataDetailEs>>>>",dataDetailEs)
-            console.log("dataDetailEn>>>>",dataDetailEn)
+            let dataDestination= []
 
             if(slug(dataDetailEs.title).toLowerCase()==tour){
                 dataDetail = dataDetailEs

@@ -36,9 +36,9 @@ export const setMoneyTypeInContext = async (context) => {
       
       console.log("userLocation",userLocation)
       let moneyType;
-      if (userLocation.country === 'Spain') {
+      if (userLocation.country === 'United States') {
         moneyType = 'USD';
-      } else if (userLocation.country === 'India') {
+      } else if (userLocation.country === 'Spain') {
         moneyType = 'EUR';
       } else if (userLocation.country === 'Mexico') {
         moneyType = 'MXN';

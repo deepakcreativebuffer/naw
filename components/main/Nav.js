@@ -73,7 +73,6 @@ class NavBar extends Component {
 
   handleDestination = () => {
     let { dataDestination } = this.props;
-    console.log("Destination>>>>>>>>>>>>>", dataDestination);
     let elementsDestination = [];
     let tempArray = [];
     let cont = -1;
@@ -226,9 +225,7 @@ class NavBar extends Component {
 
   render() {
     let { valueLanguage } = this.props;
-
     let { elementsDestination, elementsActivities } = this.state;
-    console.log("Value Language>>>>>>>>", valueLanguage);
     if (valueLanguage == "") {
       valueLanguage = "es";
     }
