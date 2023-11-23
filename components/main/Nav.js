@@ -20,6 +20,8 @@ import i18n from "../../helper/i18n/config";
 var slug = require("slug");
 
 import endPoints from "../../helper/core_services/endpoints/adventure";
+import endPoints1 from "../../helper/core_services/endpoints/destination";
+
 import request from "../../helper/core_services/core/requestService";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -67,12 +69,21 @@ class NavBar extends Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.valueLanguage != this.props.valueLanguage) {
+      this.handleDestination();
       this.handleActivities();
     }
   }
 
-  handleDestination = () => {
-    let { dataDestination } = this.props;
+  handleDestination = async () => {
+    //let { dataDestination } = this.props;
+    let { valueLanguage } = this.props;
+    let result = await request(
+      endPoints1.get_destination,
+      null,
+      null,
+      valueLanguage
+    );
+    let dataDestination = result.objects;
     let elementsDestination = [];
     let tempArray = [];
     let cont = -1;
@@ -232,6 +243,9 @@ class NavBar extends Component {
     let tagFlag =
       valueLanguage == "es" ? i18n.t("nav:lang_es") : i18n.t("nav:lang_en");
     let tagLan = valueLanguage == "es" ? iconEsp : iconEn;
+
+    console.log("sahjhhhj", i18n.t("nav:destinations"));
+    console.log("");
 
     return (
       <>
