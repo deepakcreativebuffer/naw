@@ -84,6 +84,7 @@ class NavBar extends Component {
       valueLanguage
     );
     let dataDestination = result.objects;
+    console.log("dataDestination>>>", dataDestination);
     let elementsDestination = [];
     let tempArray = [];
     let cont = -1;
