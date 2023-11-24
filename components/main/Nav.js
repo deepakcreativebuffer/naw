@@ -93,11 +93,11 @@ class NavBar extends Component {
       let { uuid, name } = element;
       tempArray.push(
         // <Link route={'searchDestination'} params={{destination: slug(name).toLowerCase()}} key={`destination_${i}`}>
-        <Link to={`${constants.url}/adventures/${slug(name).toLowerCase()}`}>
+        <a href={`${constants.url}/adventures/${slug(name).toLowerCase()}`}>
           <DropdownItem className="sty-uty-font-12-2" onClick={this.toggle}>
             {name}
           </DropdownItem>
-        </Link>
+        </a>
         // </Link>
       );
       cont++;
